@@ -1,0 +1,30 @@
+﻿@model EscolaSimples.Models.Aluno;
+
+@{
+    ViewData["Title"] = "Criar aluno";
+}
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <title>title</title>
+</head>
+<body>
+<div>
+    <h2>Cadastrar Novo Aluno</h2>
+    <form asp-action="Criar" method="post">
+        <div>
+            <label>Nome:</label>
+            <input asp-for="Nome" />
+        </div>
+        <div>
+            <label>Matricula:</label>
+            <input asp-for="Matricula" />
+        </div>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+</div>
+</body>
+</html>
